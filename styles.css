@@ -3,12 +3,14 @@
     --color-secondary: #c8add1f6;
 }
 
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-image: url('img/Background.png');
-    background-size: cover; /* Faz a imagem cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Não repete a imagem */
+    background-image: linear-gradient(to top, var(--color-primary), var(--color-secondary));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,9 +40,9 @@ label {
 }
 
 input {
-    width: calc(100% - 20px);
+    width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-secondary);
     border-radius: 4px;
     margin-right: 5px;
 }
