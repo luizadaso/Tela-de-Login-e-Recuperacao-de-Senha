@@ -1,3 +1,8 @@
+:root {
+    --color-primary: #520661;
+    --color-secondary: #c8add1f6;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-image: url('img/Background.png');
@@ -40,7 +45,7 @@ input {
     margin-right: 5px;
 }
 
-.forgot-password {
+.recuperar-senha {
     display: block;
     margin-top: 5px;
     margin-bottom: 20px;
@@ -50,21 +55,17 @@ input {
     cursor: pointer;
 }
 
-.forgot-password:hover {
-    color: #520661; /* Cor do texto ao passar o mouse */
+.recuperar-senha:hover {
+    color: var(--color-primary);
 }
 
-button {
+.button-entrar {
     width: 100%;
     padding: 10px;
-    background-color: #520661;
+    background-color: var(--color-primary);
     border: none;
     color: white;
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #520661;
 }
