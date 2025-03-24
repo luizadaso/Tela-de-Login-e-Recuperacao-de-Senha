@@ -8,8 +8,9 @@
 </head>
 <body>
     <div class="container">
-        <h2>Faça seu login</h2>
-        <form action="login" method="POST">
+
+        <form id="formLogin" action="login" method="POST">
+            <h2>Faça seu login</h2>
             <div class="input-EmailSenha">
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required>
@@ -22,6 +23,18 @@
             <p class="texto-email-invalido" id="textoEmailSenhaInvalido" style="display: none;"></p>
             <button type="submit" id="buttonEntrar" class="button-entrar">Entrar</button>
         </form>
+        <div class="form-recuperacao" id="formRecuperacao">
+            <h2>Recuperar Senha</h2>
+            <form id="formRecuperar" action="recuperar-senha" method="POST">
+                <div class="input-EmailSenha">
+                    <label for="emailRecuperacao">E-mail:</label>
+                    <input type="email" id="emailRecuperacao" name="email" required>
+                </div>
+                <button type="submit" id="buttonRecuperar" class="button-recuperar">Enviar Link de Recuperação</button>
+                <button type="button" id="cancelarRecuperacao" class="button-cancelar">Cancelar</button>
+            </form>
+        </div>
+    </div>
     </div>
     <script src="app.js"></script>
 </body>
