@@ -10,17 +10,19 @@
     <div class="container">
         <h2>Faça seu login</h2>
         <form action="login" method="POST">
-            <div class="input-group">
+            <div class="input-EmailSenha">
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required>
             </div>
-            <div class="input-group">
+            <div class="input-EmailSenha">
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" name="senha" required>
                 <a href="#" id="recuperarSenha" class="recuperar-senha">Recuperar sua senha</a>
             </div>
-            <button id="buttonEntrar" class="button-entrar" type="submit">Entrar</button>
+            <p class="texto-email-invalido" id="textoEmailSenhaInvalido" style="display: none;"></p>
+            <button type="submit" id="buttonEntrar" class="button-entrar">Entrar</button>
         </form>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
