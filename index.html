@@ -13,11 +13,11 @@
             <h2>Faça seu login</h2>
             <div class="input-EmailSenha">
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
             </div>
             <div class="input-EmailSenha">
                 <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
                 <a href="#" id="recuperarSenha" class="recuperar-senha">Recuperar sua senha</a>
             </div>
             <p class="texto-email-invalido" id="textoEmailSenhaInvalido" style="display: none;"></p>
@@ -28,7 +28,7 @@
             <form id="formRecuperar" action="recuperar-senha" method="POST">
                 <div class="input-EmailSenha">
                     <label for="emailRecuperacao">E-mail:</label>
-                    <input type="email" id="emailRecuperacao" name="email" required>
+                    <input type="email" id="emailRecuperacao" name="email" placeholder="Digite seu e-mail" required>
                 </div>
                 <button type="submit" id="buttonRecuperar" class="button-recuperar">Enviar Link de Recuperação</button>
                 <button type="button" id="cancelarRecuperacao" class="button-cancelar">Cancelar</button>
