@@ -69,8 +69,9 @@ input {
 
 .recuperar-senha {
     display: block;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
     text-align: center;
     color: #333030;
     text-decoration: underline;
