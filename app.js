@@ -2,6 +2,7 @@ let campoEmail = document.getElementById('email');
 let campoSenha = document.getElementById('senha');
 var buttonEntrar = document.getElementById('buttonEntrar');
 var textoEmailSenhaInvalido = document.getElementById('textoEmailSenhaInvalido');
+var textoEmailInvalido = document.getElementById('textoEmailInvalido');
 var recuperarSenha = document.getElementById('recuperarSenha');
 var formRecuperacao = document.getElementById('formRecuperacao');
 var cancelarRecuperacao = document.getElementById('cancelarRecuperacao');
@@ -42,7 +43,9 @@ buttonRecuperar.addEventListener('click', function(event) {
     if (valorEmail.length >= 3 && valorEmail.indexOf("@") >= 0) {
         alert("E-mail preenchido corretamente");
     } else {
-        alert("E-mail inválido");
+        const EmailInvalido = "E-mail inválido.";
+        textoEmailInvalido.textContent = EmailInvalido;
+        textoEmailInvalido.style.display = 'block';
     }
 });
 
