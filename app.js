@@ -5,21 +5,17 @@ var textoEmailSenhaInvalido = document.getElementById('textoEmailSenhaInvalido')
 var recuperarSenha = document.getElementById('recuperarSenha');
 var formRecuperacao = document.getElementById('formRecuperacao');
 var cancelarRecuperacao = document.getElementById('cancelarRecuperacao');
+var buttonRecuperar = document.getElementById('buttonRecuperar');
+var formLogin = document.getElementById('formLogin');
+var campoEmailRecuperacao = document.getElementById('emailRecuperacao');
 
 // Função para validação de entrada: E-mail e senha
 buttonEntrar.addEventListener('click', function() {
     var valorEmail = campoEmail.value;
     var valorSenha = campoSenha.value;
 
-    if (valorEmail.length >= 3 && valorEmail.indexOf("@") >= 0) {
-        console.log("E-mail preenchido corretamente");
-
-        if (valorSenha.length > 0) {
-            console.log("E-mail e senha preenchidos corretamente");
-            textoEmailSenhaInvalido.style.display = 'none';
-        } else {
-            ErroEmailSenhaInvalido();
-        }
+    if (valorEmail.length >= 3 && valorEmail.indexOf("@") >= 0 && valorSenha.length > 0) {
+        alert("E-mail e senha preenchidos corretamente");
     } else {
         ErroEmailSenhaInvalido();
     }
@@ -37,6 +33,17 @@ recuperarSenha.addEventListener('click', function(event) {
     event.preventDefault();
     formRecuperacao.style.display = 'block';
     formLogin.style.display = 'none';
+});
+
+// Função para validar campo de e-mail na tela de recupação de senha
+buttonRecuperar.addEventListener('click', function(event) {
+    event.preventDefault();
+    var valorEmail = campoEmailRecuperacao.value;
+    if (valorEmail.length >= 3 && valorEmail.indexOf("@") >= 0) {
+        alert("E-mail preenchido corretamente");
+    } else {
+        alert("E-mail inválido");
+    }
 });
 
 // Função para ocultar o formulário de recuperação de senha
