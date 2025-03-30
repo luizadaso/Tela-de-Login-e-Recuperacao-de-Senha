@@ -4,6 +4,7 @@ Tela de login com funcionalidade de recuperação de senha. Ele inclui validaç�
 
 ## Pré-visualização
 
+<img src="https://github.com/user-attachments/assets/91823a28-6edc-445c-bda9-4ebfc967390b" width="50%" alt="demonstracao"/>
 
 
 ## Descrição
