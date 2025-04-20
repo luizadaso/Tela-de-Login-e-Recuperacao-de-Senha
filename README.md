@@ -30,13 +30,15 @@ Este projeto é uma implementação simples de uma tela de login responsiva com 
 - **Git**: Utilizado para controle de versão do código-fonte.
 - **GitHub**: Utilizado como plataforma de hospedagem do repositório do projeto.
 
-## Autora
+### Autora
 
 Para mais informações, sinta-se à vontade para entrar em contato:
 
 <div align="left">
-  <img src="https://github.com/user-attachments/assets/57cac2a3-49b1-4a0a-aef3-e968523971eb" width="15%" alt="autora" />
+  <img src="https://github.com/user-attachments/assets/57cac2a3-49b1-4a0a-aef3-e968523971eb" width="13%" alt="autora" />
 </div>
 
 - [Github](https://github.com/luizadaso)
-- [Linkedin](https://www.linkedin.com/in/luizadaso)
+- [Linkedin](https://www.linkedin.com/in/luizadaso)  
+
+Se gostou do projeto, não esqueça de deixar uma ⭐ no repositório! 😊  
